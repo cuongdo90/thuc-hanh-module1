@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cho danh sách các điểm thi ở trong một mảng.
+         Hãy viết hàm findMax() với đầu vào là một mảng điểm và đầu ra là điểm số cao nhất được tìm thấy trong danh sách đó.</title>
+</head>
+<body>
+    <script>
+        let mangS = [1,2,3,4,5,6,7,8,9];
+        let max = mangS[0];
+        let trung_gian =0;
+        document.write("mang ["+mangS+"] <br>");
+        for (let i =1; i< mangS.length; i++){
+            if (mangS[i] > max){
+                max = mangS[i];
+            trung_gian = mangS[i];
+            }
+        }
+        document.write("điểm cao nhất  là"+ ": "+max+'Điểm');
+    </script>
+</body>
+</html>c

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp Hình Tròn</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #c23232;">   
+<script>
+   function Circle(x, y, radius, color){
+   this.x = x;
+   this.y = y;
+   this.radius = radius;
+   this.color = color;
+}
+function createCircle(){
+    var ctx = document.getElementById("myCanvas").getContext("2d");
+    var circle= new Circle(100, 100, 100);
+    ctx.beginPath();
+    ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+    ctx.fillStyle = "#000000";
+    ctx.fill();
+}
+
+createCircle();
+</script>
+</body>
